@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 00, 0, 0.7);
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+h1#title {
+  color: rgb(65, 0, 37);
+
+  width: 400px;
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 3rem;
+  padding: 1.25rem;
+  font-family: "Oleo Script", cursive;
+  border-bottom: 3px solid rgb(231, 64, 158);
+  border-right: 3px solid rgb(231, 64, 158);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+}
+
+footer {
+  background: rgb(67, 68, 68);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+footer p {
+  color: rgb(127, 127, 127);
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Fira Code";
+}
